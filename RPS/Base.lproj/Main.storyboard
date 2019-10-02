@@ -37,16 +37,25 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="75" height="96"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                                 <state key="normal" title="👊"/>
+                                                <connections>
+                                                    <action selector="PlayerRockButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mNl-3Q-amA"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hb-kf-ztR">
                                                 <rect key="frame" x="115" y="0.0" width="75" height="96"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                                 <state key="normal" title="✋"/>
+                                                <connections>
+                                                    <action selector="PlayerPaperButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f6K-QO-Ffv"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shN-jg-muH">
                                                 <rect key="frame" x="230" y="0.0" width="75" height="96"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                                 <state key="normal" title="✌️"/>
+                                                <connections>
+                                                    <action selector="PlayerScissorsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7am-0x-kL8"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -54,6 +63,9 @@
                                         <rect key="frame" x="84.5" y="327" width="136" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <state key="normal" title="Play Again"/>
+                                        <connections>
+                                            <action selector="PlayAgainButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r9o-SC-3sp"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -65,6 +77,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="AppSignOutlet" destination="LSl-Ja-1qr" id="Uho-uk-9Xg"/>
+                        <outlet property="GameStatusLabel" destination="qCB-hi-Lle" id="WEu-Ht-oaG"/>
+                        <outlet property="PlayAgainLabel" destination="c33-MS-XaO" id="ba4-uk-5HZ"/>
+                        <outlet property="PlayerPaperSignLabel" destination="7hb-kf-ztR" id="8v5-GX-nLR"/>
+                        <outlet property="PlayerRockSignLabel" destination="Mfg-eu-SvY" id="yqe-SG-LSC"/>
+                        <outlet property="PlayerScissorsSignLabel" destination="shN-jg-muH" id="lEH-NV-0hc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
